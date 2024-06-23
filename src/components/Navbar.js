@@ -36,7 +36,7 @@ export default function Navbar(props) {
       </nav>
       {props.about && (
         <About />
-      )};
+      )}
     </>
   )
 }
