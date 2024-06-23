@@ -92,15 +92,15 @@ function TextForm(props) {
           <textarea className="form-control" value={text} onClick={() => { click ? setText("") : setText(text) }}
             onChange={handleChange} id="mybox" rows="6"></textarea>
         </div>
-        <button className='btn btn-primary mx-1' onClick={handleUpperCase}>Convert To Uppercase</button>
-        <button className='btn btn-primary mx-1' onClick={handleLowerCase}>Convert to Lowercase</button>
-        <button className='btn btn-primary mx-1' onClick={handleRemoveSpace}>Remove Extra Space</button>
+        <button className='btn btn-primary mx-1 my-1' onClick={handleUpperCase}>Convert To Uppercase</button>
+        <button className='btn btn-primary mx-1 my-1' onClick={handleLowerCase}>Convert to Lowercase</button>
+        <button className='btn btn-primary mx-1 my-1' onClick={handleRemoveSpace}>Remove Extra Space</button>
         <button type="button" onClick={copyToClipboard} class="btn btn-primary mx-1" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Copied to Clipboard">
           {copyBtnText}
         </button>
-        <button className='btn btn-primary mx-1' onClick={handleClearAll}>Clear All</button>
+        <button className='btn btn-primary mx-1 my-1' onClick={handleClearAll}>Clear All</button>
         <div class="btn-group" role="group">
-          <button type="button" class="btn btn-primary dropdown-toggle mx-1" data-bs-toggle="dropdown" aria-expanded="false">
+          <button type="button" class="btn btn-primary dropdown-toggle mx-1 my-1" data-bs-toggle="dropdown" aria-expanded="false">
             Save As
           </button>
           <ul class="dropdown-menu">
